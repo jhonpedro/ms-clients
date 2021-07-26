@@ -1,4 +1,4 @@
-interface NewClient {
+export interface NewClient {
 	name: string
 	email: string
 	cpf: string
@@ -6,7 +6,7 @@ interface NewClient {
 	income: number
 }
 
-enum StatusEnum {
+export enum StatusEnum {
 	pending = 'pending',
 	approved = 'approved',
 	denied = 'denied',

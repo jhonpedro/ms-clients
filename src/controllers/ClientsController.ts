@@ -1,5 +1,6 @@
 import { Request, Response } from 'express'
 import { getCustomRepository } from 'typeorm'
+import { NewClient, StatusEnum } from '../@types'
 import ClientRepository from '../database/repositories/Client'
 import ClientEvaluation from '../evaluation/Client'
 import newClientEmail from '../kafka/producers/new-client'

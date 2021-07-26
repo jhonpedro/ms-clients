@@ -4,6 +4,7 @@ import {
 	PrimaryGeneratedColumn,
 	UpdateDateColumn,
 } from 'typeorm'
+import { StatusEnum } from '../../@types'
 
 @Entity()
 class Client {
