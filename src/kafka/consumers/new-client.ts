@@ -1,8 +1,8 @@
 import ClientsController from '../../controllers/ClientsController'
 import KafkaInstance from '../KafkaInstance'
 
-const newUserConsumer = async () => {
-	const consumer = KafkaInstance.consumer()
+const newClientConsumer = async () => {
+	const consumer = KafkaInstance.consumer({ groupId: 'ms-clients' })
 
 	await consumer.connect()
 
@@ -24,4 +24,4 @@ const newUserConsumer = async () => {
 	})
 }
 
-export default newUserConsumer
+export default newClientConsumer
