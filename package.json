@@ -7,6 +7,7 @@
 		"dev": "ts-node-dev --watch ./src/ --respawn --transpile-only ./src/server.ts",
 		"typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
 		"password:generate": "ts-node-dev ./src/utils/generatePass.ts",
+		"await:db": "node ./src/utils/awaitDatabaseStart.js",
 		"build": "tsc"
 	},
 	"keywords": [],
