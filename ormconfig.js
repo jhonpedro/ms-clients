@@ -8,7 +8,7 @@ module.exports = {
 	password: process.env.PG_PASS,
 	database: process.env.PG_DATABASE,
 	loggin: true,
-	entities: ['src/database/models/*.ts'],
+	entities: ['src/database/models/*.entity.ts'],
 	migrations: ['src/database/migrations/*.ts'],
 	cli: {
 		migrationsDir: 'src/database/migrations',
