@@ -1,3 +1,4 @@
+import { StatusEnum } from '../@types'
 import Client from '../database/models/Client.entity'
 
 class ClientEvaluation {
@@ -9,7 +10,7 @@ class ClientEvaluation {
 
 	private async evaluate(): Promise<StatusEnum> {
 		await new Promise((resolve) => {
-			setTimeout(resolve, 3000)
+			setTimeout(resolve, 15000)
 		})
 
 		if (this.client.income <= 500) {
